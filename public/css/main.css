@@ -1,0 +1,93 @@
+body, html {
+    width: 100%;
+    min-width: 1000px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma;
+
+}
+.wrapper{
+    width: 1000px;
+    margin: 0 auto;
+}
+.header{
+    background: #d76d6b;
+    padding: 50px 0;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.left-sidebar{
+    background: #0010d5;
+    float: left;
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.content{
+    background: #00288b;
+    float: left;
+    width: 1000px;
+    height: 300px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+.clear {
+    clear: both;
+}
+.footer{
+    background: #d76d6b;
+    padding: 100px 0;
+    padding: 50px 0;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.hero_foto img{
+    width: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+.name {
+    margin-top: 15px;
+    color: black;
+    font-size: 35px;
+    font-style: italic;
+}
+
+img {
+    width: 200%;
+    max-width: 200px;
+    height: auto;
+}
+
+.hero_foto img{
+    width: 200px;
+}
+
+.edit_foto img{
+    width: 100px;
+}
+.action{
+    float: left;
+    margin-right: 10px;
+}
+
+
+ul.posts {
+    margin: 0; /* Обнуляем значение отступов */
+    padding: 4px; /* Значение полей */
+}
+ul.posts li {
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+    border: 1px solid #000; /* Рамка вокруг текста */
+    padding: 3px; /* Поля вокруг текста */
+}
