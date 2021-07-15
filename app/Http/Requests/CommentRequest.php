@@ -31,7 +31,7 @@ class CommentRequest extends FormRequest
     public function messages()
     {
         return [
-            'min' => 'Поле :attribute должно иметь минимум :min символов'
+            'min' => 'field :attribute must have :min characters'
         ];
     }
 }

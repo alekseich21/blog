@@ -26,7 +26,7 @@ class FileRepository implements FileRepositoryInterface
         $this->file = $file;
     }
 
-    public function file($id)
+    public function file(int $id)
     {
        $file = $this->file->where('id', $id)->first();
 
@@ -38,25 +38,20 @@ class FileRepository implements FileRepositoryInterface
      * @param Request $request
      * @return mixed
      */
-    public function store(Request $request)
+    public function store(array $input)
     {
-        $data = $request->all();
-        $data['file'] = $this->file->uploadImage($request);
-
-        return $this->file->create($data);
+        return $this->file->create($input);
     }
 
     /**
-     * @param Request $request
-     * @param $id
+     * @param array $input
+     * @param int $id
      * @return mixed
      */
-    public function update(Request $request, $id)
+    public function update(array $input, int $id)
     {
-        $data = $request->all();
         $file = $this->file->where('id', $id)->first();
-        $data['file'] = $this->file->uploadImage($request);
-        $file->update($data);
+        $file->update($input);
 
         return $file;
     }

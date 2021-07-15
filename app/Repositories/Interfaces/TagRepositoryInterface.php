@@ -12,11 +12,10 @@ use Illuminate\Http\Request;
 interface TagRepositoryInterface
 {
     /**
-     * Store a newly created resource in storage
-     * @param Request $request
+     * @param array $input
      * @return mixed
      */
-    public function store(Request $request);
+    public function store(array $input);
 
     /**
      * Display a listing of the resource

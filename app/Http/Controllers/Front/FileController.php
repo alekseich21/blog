@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Front;
 
 use App\Http\Controllers\Controller;
+use App\Services\UploadImageService;
 use Illuminate\Http\Request;
 use App\Models\File;
 use App\Repositories\Interfaces\FileRepositoryInterface;
@@ -18,13 +19,16 @@ class FileController extends Controller
      */
     private $repository;
 
+    private $uploadImageService;
+
     /**
      * FileController constructor.
      * @param FileRepositoryInterface $repository
      */
-    public function __construct(FileRepositoryInterface $repository)
+    public function __construct(FileRepositoryInterface $repository, UploadImageService $uploadImageService)
     {
         $this->repository = $repository;
+        $this->uploadImageService = $uploadImageService;
     }
 
     /**
@@ -46,7 +50,7 @@ class FileController extends Controller
      */
     public function save(Request $request)
     {
-        $this->repository->store($request);
+        $this->uploadImageService->saveImage($request);
 
         return redirect()->route('home');
     }
@@ -59,7 +63,7 @@ class FileController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $this->repository->update($request, $id);
+        $this->uploadImageService->saveImage($request, $id);
 
         return redirect()->route('home');
     }

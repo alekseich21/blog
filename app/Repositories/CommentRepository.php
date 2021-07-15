@@ -36,32 +36,28 @@ class CommentRepository implements CommentRepositoryInterface
     }
 
     /**
-     * Store a newly created resource in storage
-     * @param Request $request
+     * @param array $input
      * @return mixed
      */
-    public function store(Request $request)
+    public function store(array $input)
     {
-        $data = $request->all();
-        $this->comment->user()->associate($request->user());
-        $post = $this->post->where('id', $request->get('post_id'))->first();
-        $post->comments()->create($data);
+        $this->comment->user()->associate($input['user_id']);
+        $post = $this->post->where('id', $input['post_id'])->first();
 
-        return $post;
+        return $post->comments()->create($input);
     }
 
     /**
-     * Store a newly created resource in storage
-     * @param Request $request
+     * @param array $input
      * @return mixed
      */
-    public function replyStore(Request $request)
+    public function replyStore(array $input)
     {
         $reply = $this->comment;
-        $reply->comment = $request->get('comment');
-        $reply->user()->associate($request->user());
-        $reply->parent_id = $request->get('comment_id');
-        $post = $this->post->where('id', $request->get('post_id'))->first();
+        $reply->comment = $input['comment'];
+        $reply->user()->associate($input['user_id']);
+        $reply->parent_id = $input['comment_id'];
+        $post = $this->post->where('id', $input['post_id'])->first();
         $reply->post_id = $post->id;
 
         return $post->comments()->save($reply);

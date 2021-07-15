@@ -31,7 +31,7 @@ class TagRequest extends FormRequest
     public function messages()
     {
         return [
-            'required' => 'Поле :attribute обязательно для ввода'
+            'required' => 'Field :attribute required to enter'
         ];
     }
 }

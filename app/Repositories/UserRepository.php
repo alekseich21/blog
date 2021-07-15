@@ -33,8 +33,7 @@ class UserRepository implements UserRepositoryInterface
      */
     public function showProfile($id)
     {
-       $user = $this->user->where('id', $id)->first();
+        return $this->user->where('id', $id)->first();
 
-       return $user;
     }
 }

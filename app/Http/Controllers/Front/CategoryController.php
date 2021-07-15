@@ -43,7 +43,7 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        $this->repository->store($request);
+        $this->repository->store($request->all());
 
         return redirect()->route('home');
     }

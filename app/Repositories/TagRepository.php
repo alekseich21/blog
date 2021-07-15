@@ -28,14 +28,12 @@ class TagRepository implements TagRepositoryInterface
     }
 
     /**
-     * @param \Illuminate\Http\Request $request
+     * @param array $input
      * @return mixed
      */
-    public function store($request)
+    public function store(array $input)
     {
-        $data = $request->all();
-
-        return $this->tag->create($data);
+        return $this->tag->create($input);
     }
 
     /**

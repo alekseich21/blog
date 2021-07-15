@@ -13,28 +13,20 @@ use App\Repositories\Interfaces\PostRepositoryInterface;
 class HomeController extends Controller
 {
     /**
-     * @var PostRepositoryInterface
-     */
-    private $postRepository;
-
-    /**
      * HomeController constructor.
-     * @param PostRepositoryInterface $postRepository
      */
-    public function __construct(PostRepositoryInterface $postRepository)
+    public function __construct()
     {
         $this->middleware('auth');
-        $this->postRepository = $postRepository;
     }
 
     /**
-     * Show User Posts
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function index()
     {
-        $posts = $this->postRepository->authorPosts();
+        $user = auth()->user();
 
-        return view('home', compact('posts'));
+        return view('home', compact('user'));
     }
 }

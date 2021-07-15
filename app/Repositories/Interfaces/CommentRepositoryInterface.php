@@ -12,15 +12,15 @@ use Illuminate\Http\Request;
 interface CommentRepositoryInterface
 {
     /**
-     * @param Request $request
+     * @param array $input
      * @return mixed
      */
-    public function store(Request $request);
+    public function store(array $input);
 
     /**
-     * @param Request $request
+     * @param array $input
      * @return mixed
      */
-    public function replyStore(Request $request);
+    public function replyStore(array $input);
 
 }

@@ -32,8 +32,8 @@ Route::group([
     Route::post('/post/store', 'PostController@store')->name('save-post');
     Route::get('/post/edit/{id}', 'PostController@edit')->name('post-edit');
     Route::post('/post/update/{id}', 'PostController@update')->name('update-post');
-    Route::get('/tag/{id}', 'TagController@showTag')->name('tag-show');
     Route::get('/tag/create', 'TagController@create')->name('tag-create');
+    Route::get('/tag/{id}', 'TagController@showTag')->name('tag-show');
     Route::post('/tag/store', 'TagController@store')->name('save-tag');
     Route::get('/', 'SiteController@index')->name('index');
     Route::get('/my-posts', 'SiteController@myPosts')->name('my-posts');

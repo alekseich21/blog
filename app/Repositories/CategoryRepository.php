@@ -29,14 +29,12 @@ class CategoryRepository implements CategoryRepositoryInterface
     }
 
     /**
-     * @param Request $request
+     * @param array $input
      * @return mixed
      */
-    public function store(Request $request)
+    public function store(array $input)
     {
-        $params = $request->all();
-
-        return $this->category->create($params);
+        return $this->category->create($input);
     }
 
     /**

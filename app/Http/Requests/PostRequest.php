@@ -34,8 +34,8 @@ class PostRequest extends FormRequest
     public function messages()
     {
         return [
-            'required' => 'Поле :attribute обязательно для ввода',
-            'integer' => 'Поле :attribute должно быть : integer'
+            'required' => 'Field :attribute required to enter',
+            'integer' => 'Field :attribute should be : integer'
         ];
     }
 }

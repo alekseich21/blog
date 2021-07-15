@@ -36,7 +36,7 @@ class CommentController extends Controller
      */
     public function store(CommentRequest $request)
     {
-        $this->commentRepository->store($request);
+        $this->commentRepository->store($request->all());
 
         return back();
     }
@@ -48,7 +48,7 @@ class CommentController extends Controller
      */
     public function replyStore(CommentRequest $request)
     {
-        $this->commentRepository->replyStore($request);
+        $this->commentRepository->replyStore($request->all());
 
         return back();
     }

@@ -1,7 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:blog" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="00a3488e-4b29-4b78-98dc-4b0371338ee0" name="Default Changelist" comment="" />
+    <list default="true" id="00a3488e-4b29-4b78-98dc-4b0371338ee0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Services/UploadImageService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/CommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/CommentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/FileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/FileController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/SiteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/SiteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/TagController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/TagController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/CommentRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/CommentRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/PostRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/PostRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/TagRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/TagRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/CategoryRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/CategoryRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/CommentRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/CommentRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/FileRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/FileRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Interfaces/CategoryRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Interfaces/CategoryRepositoryInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Interfaces/CommentRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Interfaces/CommentRepositoryInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Interfaces/FileRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Interfaces/FileRepositoryInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Interfaces/PostRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Interfaces/PostRepositoryInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Interfaces/TagRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Interfaces/TagRepositoryInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/PostRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/PostRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/TagRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/TagRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_07_09_192529_create_comments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_07_09_192529_create_comments_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +53,9 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -122,6 +168,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -142,25 +189,38 @@
       <workItem from="1625896720486" duration="30260000" />
       <workItem from="1625985996274" duration="8459000" />
       <workItem from="1626011124354" duration="2779000" />
+      <workItem from="1626284931316" duration="948000" />
+      <workItem from="1626365187824" duration="5830000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="530" y="190" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1625920849196">
+    <state x="530" y="190" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1626367304602">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
-    <state x="530" y="190" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1600.870@0.0.1600.870" timestamp="1625920849196" />
-    <state x="580" y="177" key="FileChooserDialogImpl" timestamp="1626015231034">
+    <state x="530" y="190" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1600.870@0.0.1600.870" timestamp="1626367304602" />
+    <state x="580" y="177" key="FileChooserDialogImpl" timestamp="1626285923630">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
-    <state x="580" y="177" key="FileChooserDialogImpl/0.0.1600.870@0.0.1600.870" timestamp="1626015231034" />
-    <state x="579" y="158" key="NewPhpClassDialog" timestamp="1625945364251">
+    <state x="580" y="177" key="FileChooserDialogImpl/0.0.1600.870@0.0.1600.870" timestamp="1626285923630" />
+    <state x="579" y="158" key="NewPhpClassDialog" timestamp="1626367187752">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
-    <state x="579" y="158" key="NewPhpClassDialog/0.0.1600.870@0.0.1600.870" timestamp="1625945364251" />
+    <state x="579" y="158" key="NewPhpClassDialog/0.0.1600.870@0.0.1600.870" timestamp="1626367187752" />
     <state x="634" y="358" key="NewPhpFileDialog" timestamp="1625989835404">
       <screen x="0" y="0" width="1600" height="870" />
     </state>

@@ -24,9 +24,10 @@ interface PostRepositoryInterface
     public function showPost($id);
 
     /**
-     * Display a listing of the author posts.
+     * @param int $id
+     * @return mixed
      */
-    public function authorPosts();
+    public function authorPosts(int $id);
 
     /**
      * @return mixed
@@ -34,14 +35,17 @@ interface PostRepositoryInterface
     public function popularPosts();
 
     /**
-     * Store a newly created resource in storage.
+     * @param array $input
+     * @return mixed
      */
-    public function store(Request $request);
+    public function store(array $input);
 
     /**
-     * Update the specified resource in storage.
+     * @param array $input
+     * @param $id
+     * @return mixed
      */
-    public function update(Request $request, $id);
+    public function update(array $input, $id);
 
     /**
      * @return mixed

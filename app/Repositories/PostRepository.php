@@ -39,12 +39,12 @@ class PostRepository implements PostRepositoryInterface
     }
 
     /**
-     * Display an author posts
+     * @param int $id
      * @return mixed
      */
-    public function authorPosts()
+    public function authorPosts($id)
     {
-        return $this->post->where('user_id', Auth::user()->id)->get();
+        return $this->post->where('user_id', $id)->get();
     }
 
     public function popularPosts()
@@ -53,17 +53,14 @@ class PostRepository implements PostRepositoryInterface
     }
 
     /**
-     * @param Request $request
-     * Store a newly created resource in storage
+     * @param array $input
      * @return mixed
      */
-    public function store(Request $request)
+    public function store(array $input)
     {
-        $params = $request->all();
-        $post = $this->post->create($params);
-        $post->tags()->sync($request->tags);
+        $post = $this->post->create($input);
 
-        return $post;
+        return $post->tags()->sync($input['tags']);
     }
 
     /**
@@ -81,20 +78,16 @@ class PostRepository implements PostRepositoryInterface
     }
 
     /**
-     * @param Request $request
-     *  Update the specified resource in storage
+     * @param array $input
      * @param $id
      * @return mixed
      */
-    public function update(Request $request, $id)
+    public function update(array $input, $id)
     {
-        $data = $request->all();
         $post = $this->post->where('id', $id)->first();
-        $post->update($data);
+        $post->update($input);
 ;
-        $post->tags()->sync($request->tags);
-
-        return $post;
+        return $post->tags()->sync($input['tags']);
     }
 
     /**

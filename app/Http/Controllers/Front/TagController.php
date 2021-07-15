@@ -43,7 +43,7 @@ class TagController extends Controller
      */
     public function store(TagRequest $request)
     {
-        $this->repository->store($request);
+        $this->repository->store($request->all());
 
         return redirect()->route('home');
     }

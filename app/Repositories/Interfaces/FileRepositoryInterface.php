@@ -12,22 +12,21 @@ use Illuminate\Http\Request;
 interface FileRepositoryInterface
 {
     /**
-     * @param $id
-     * get edit file
+     * @param int $id
      * @return mixed
      */
-    public function file($id);
-    /**
-     * @param Request $request
-     * Store a newly created resource in storage
-     * @return mixed
-     */
-    public function store(Request $request);
+    public function file(int $id);
 
     /**
-     * @param Request $request
+     * @param array $input
+     * @return mixed
+     */
+    public function store(array $input);
+
+    /**
+     * @param array $input
      * @param $id
      * @return mixed
      */
-    public function update(Request $request, $id);
+    public function update(array $input, int $id);
 }

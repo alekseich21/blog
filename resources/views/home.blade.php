@@ -49,7 +49,7 @@
                                 <th>Текст статьи</th>
                                 </thead>
                                 <tbody>
-                                @foreach($posts as $post)
+                                @foreach($user->posts as $post)
                                     <tr>
 
                                         <td><a href="{{route('post-show', ['id' => $post->id])}}">{{$post->title}}</a></td>

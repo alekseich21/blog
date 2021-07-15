@@ -64,7 +64,9 @@ class SiteController extends Controller
      */
     public function myPosts()
     {
-        $myPosts = $this->postRepository->authorPosts();
+        $id = $this->getUserId();
+
+        $myPosts = $this->postRepository->authorPosts($id);
 
         return view('posts.my-posts', compact('myPosts'));
     }
@@ -91,5 +93,12 @@ class SiteController extends Controller
         return view('posts.posts-without-comments', compact('posts'));
     }
 
+    /**
+     * @return mixed
+     */
+    private function getUserId()
+    {
+        return auth()->user()->id;
+    }
 
 }

@@ -67,7 +67,7 @@ class PostController extends Controller
      */
     public function store(PostRequest $request)
     {
-        $this->postRepository->store($request);
+        $this->postRepository->store($request->all());
 
         return redirect()->route('home');
     }
@@ -106,7 +106,7 @@ class PostController extends Controller
      */
     public function update(PostRequest $request, $id)
     {
-        $this->postRepository->update($request, $id);
+        $this->postRepository->update($request->all(), $id);
 
         return redirect()->route('index');
     }

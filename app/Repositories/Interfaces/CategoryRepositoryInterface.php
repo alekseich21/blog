@@ -12,10 +12,10 @@ use Illuminate\Http\Request;
 interface CategoryRepositoryInterface
 {
     /**
-     * @param Request $request
+     * @param array $input
      * @return mixed
      */
-    public function store(Request $request);
+    public function store(array $input);
 
     /**
      * @return mixed
