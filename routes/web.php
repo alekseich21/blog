@@ -18,7 +18,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::group([
     'namespace' => 'Front',
-    'middleware' => 'auth'
+   // 'middleware' => 'auth'
 ],function (){
 
 
